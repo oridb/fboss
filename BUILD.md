@@ -2,9 +2,11 @@
 
 FBOSS is being tested on Ubuntu 14.04.
 
-The provided `getdeps.sh` script will fetch the dependencies required. If they are
-available as Ubuntu packages, then they will be installed through apt-get. If they
-are not, then they will be downloaded to external/ and built from source.
+The provided `getdeps.sh` script will fetch the dependencies required. If you are
+running on Ubuntu or Debian, and would like to install the software available
+available as Ubuntu packages, `getdeps.sh pkg` will fetch and install the packages.
+This needs sudo. Without arguments, getdeps.sh will update or fetch source dependencies
+and build them.
 
 If you want to build them manually, the dependencies are as follows:
 
