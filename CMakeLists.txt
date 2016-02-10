@@ -71,6 +71,7 @@ add_library(fboss_agent STATIC
     common/stats/ServiceData.cpp
 
     fboss/agent/ApplyThriftConfig.cpp
+    fboss/agent/ArpCache.cpp
     fboss/agent/ArpHandler.cpp
     fboss/agent/capture/PcapFile.cpp
     fboss/agent/capture/PcapPkt.cpp
@@ -132,6 +133,7 @@ add_library(fboss_agent STATIC
     fboss/agent/LldpManager.cpp
     fboss/agent/Main.cpp
     fboss/agent/ndp/IPv6RouteAdvertiser.cpp
+    fboss/agent/NdpCache.cpp
     fboss/agent/NeighborListenerClient.cpp
     fboss/agent/NeighborUpdater.cpp
     fboss/agent/NexthopToRouteCount.cpp
@@ -150,11 +152,13 @@ add_library(fboss_agent STATIC
     fboss/agent/packet/PktUtil.cpp
     fboss/agent/Platform.cpp
     fboss/agent/platforms/wedge/oss/WedgePlatform.cpp
+    fboss/agent/platforms/wedge/oss/Wedge100Platform.cpp
     fboss/agent/platforms/wedge/oss/WedgePort.cpp
     fboss/agent/platforms/wedge/oss/WedgeProductInfo.cpp
     fboss/agent/platforms/wedge/wedge_ctrl.cpp
     fboss/agent/platforms/wedge/WedgeI2CBusLock.cpp
     fboss/agent/platforms/wedge/WedgePlatform.cpp
+    fboss/agent/platforms/wedge/Wedge100Platform.cpp
     fboss/agent/platforms/wedge/WedgePort.cpp
     fboss/agent/platforms/wedge/WedgeProductInfo.cpp
     fboss/agent/platforms/wedge/WedgeQsfp.cpp
